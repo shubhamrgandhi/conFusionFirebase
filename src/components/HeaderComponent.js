@@ -129,12 +129,12 @@ class Header extends Component {
                     <ModalBody>
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>
-                                <Label htmlFor="username">Email</Label>
+                                <Label htmlFor="username">Admin Email</Label>
                                 <Input type="text" id="username" name="username"
                                     innerRef={(input) => this.username = input} />
                             </FormGroup>
                             <FormGroup>
-                                <Label htmlFor="password">Password</Label>
+                                <Label htmlFor="password">Admin Password</Label>
                                 <Input type="password" id="password" name="password"
                                     innerRef={(input) => this.password = input}  />
                             </FormGroup>
@@ -145,10 +145,13 @@ class Header extends Component {
                                     Remember me
                                 </Label>
                             </FormGroup>
-                            <Button type="submit" value="submit" color="primary">Login</Button>
+                            <FormGroup>
+                                <p></p>
+                                <Button type="submit" value="submit" color="primary"> Admin Login </Button>
+                            </FormGroup>
                         </Form>
                         <p></p>
-                        <Button color="danger" onClick={this.handleGoogleLogin}><span className="fa fa-google fa-lg"></span> Login with Google</Button>
+                        <Button color="danger" onClick={this.handleGoogleLogin}><span className="fa fa-google fa-lg"></span> User Login with Google</Button>
                     </ModalBody>
                 </Modal>
             </React.Fragment>
